@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/workspaces/Atividade-Pontuada-01/')
+sys.path.append('/workspaces/Atividade-Pontuada/')
 from project.models.Endereco import Endereco
 from project.models.Juridica import Juridica
 from models.enums.UnidadeFederativa import UnidadeFederativa
@@ -110,6 +110,7 @@ def engenheiro_valido():
         )
 
     print(engenheiro)
+cliente_valido()
 
 """Funções de Instanciamento das classes para Testes:"""
 

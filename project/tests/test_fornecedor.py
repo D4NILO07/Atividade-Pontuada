@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/workspaces/Atividade-Pontuada-01')
+sys.path.append('/workspaces/Atividade-Pontuada')
 import pytest
 from project.models.Juridica import Juridica
 from project.models.Pessoa import Pessoa

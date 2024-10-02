@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/workspace/Atividade-Pontuada-01/project')
+sys.path.append('/workspace/Atividade-Pontuada/project')
 from project.models.enums.EstadoCivil import EstadoCivil
 from project.models.enums.Sexo import Sexo
 sys.path.append('/workspace/Atividade-Pontuada-01/project')

@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/workspaces/Atividade-Pontuada-01/project')
+sys.path.append('/workspaces/Atividade-Pontuada/project')
 from models.Endereco import Endereco
 from models.Fisica import Fisica
 from models.enums.EstadoCivil import EstadoCivil

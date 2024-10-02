@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/workspaces/Atividade-Pontuada-01/project/')
+sys.path.append('/workspaces/Atividade-Pontuada/project/')
 from abc import ABC, abstractmethod
 from project.models.Endereco import Endereco
 class Pessoa(ABC):
