@@ -12,9 +12,9 @@ from project.models.Advogado import Advogado
 @pytest.fixture
 def pessoa_valida():
     advogado = Advogado(123, 
-                        "Douglas", 
-                        "71 98472 - 9798",
-                        "dougxandy@gmail.com",
+                        "Danilo", 
+                        "71 99359 - 2306",
+                        "danilo123@gmail.com",
 
                         Endereco("Rua Boa Esperança de Ilha Amarela", 
                                  "130", "1º Andar", 
@@ -24,7 +24,7 @@ def pessoa_valida():
 
                         Sexo.MASCULINO,
                         EstadoCivil.SOLTEIRO,
-                        "25/03/2007",
+                        "09/05/2007",
                         "063.586.945.54",
                         "34.567.890-1",
                         "123321_M",
@@ -38,13 +38,13 @@ def test_validar_id_pessoa_valida(pessoa_valida):
     assert pessoa_valida.id == 123
 
 def test_validar_nome_pessoa_valida(pessoa_valida):
-    assert pessoa_valida.nome == "Douglas"
+    assert pessoa_valida.nome == "Danilo"
 
 def test_validar_telefone_pessoa_valida(pessoa_valida): 
-    assert pessoa_valida.telefone == "71 98472 - 9798"
+    assert pessoa_valida.telefone == "71 99359 - 2306"
 
 def test_validar_email_pessoa_valida(pessoa_valida):
-    assert pessoa_valida.email == "dougxandy@gmail.com"
+    assert pessoa_valida.email == "danilo123@gmail.com"
 
 def test_validar_logradouro_pessoa_valida(pessoa_valida):
     assert pessoa_valida.endereco.logradouro == "Rua Boa Esperança de Ilha Amarela"
@@ -71,7 +71,7 @@ def test_validar_estado_civil_pessoa_valida(pessoa_valida):
     assert pessoa_valida.estadoCivil == EstadoCivil.SOLTEIRO
 
 def test_validar_data_nascimento_pessoa_valida(pessoa_valida):
-    assert pessoa_valida.dataNascimento == "25/03/2007"
+    assert pessoa_valida.dataNascimento == "09/05/2007"
 
 def test_validar_cpf_pessoa_valida(pessoa_valida):
     assert pessoa_valida.cpf == "063.586.945.54"
@@ -95,8 +95,8 @@ def test_nome_vazio_pessoa_valida(pessoa_valida):
     with pytest.raises(ValueError, match = "Nome Inválido, Insira o Nome Corretamente."): 
         Advogado(123, 
                         " ", 
-                        "71 98472 - 9798",
-                        "dougxandy@gmail.com",
+                        "71 99359 - 2306",
+                        "danilo123@gmail.com",
 
                         Endereco("Rua Boa Esperança de Ilha Amarela", 
                                  "130", "1º Andar", 
@@ -106,7 +106,7 @@ def test_nome_vazio_pessoa_valida(pessoa_valida):
 
                         Sexo.MASCULINO,
                         EstadoCivil.SOLTEIRO,
-                        "25/03/2007",
+                        "09/05/2007",
                         "063.586.945.54",
                         "34.567.890-1",
                         "123321_M",
@@ -117,8 +117,8 @@ def test_nome_vazio_pessoa_valida(pessoa_valida):
 def test_id_valor_negativo_pessoa_valida(pessoa_valida):
     with pytest.raises(ValueError, match = "Digite apenas números positivos para o ID."):
         Advogado(-9999, 
-                        "Douglas", 
-                        "71 98472 - 9798",
+                        "Danilo", 
+                        "71 99359 - 2306",
                         "dougxandy@gmail.com",
 
                         Endereco("Rua Boa Esperança de Ilha Amarela", 

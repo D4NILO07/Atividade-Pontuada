@@ -26,7 +26,7 @@ def cliente_valido():
 
     endereco_cliente = Endereco("Rua Boa Esperança de Ilha Amarela", "130", "1º Andar", "40711 - 600", "Salvador", UnidadeFederativa.BAHIA)
 
-    cliente = Cliente(123,"Douglas", "71 98472 - 9798", "dougxandy@gmail.com", endereco_cliente, Sexo.MASCULINO, EstadoCivil.SOLTEIRO, "25/03/2007", "123_PA")
+    cliente = Cliente(123,"Danilo", "71 98472 - 9798", "danilo123@gmail.com", endereco_cliente, Sexo.MASCULINO, EstadoCivil.SOLTEIRO, "09/05/2007", "123_PA")
 
     print(cliente)
 
@@ -38,7 +38,7 @@ def ps_valido():
     
     endereco_ps = Endereco("Avenida Paulista", "1578", "9º Andar", "01310-200", "São Paulo", UnidadeFederativa.SAO_PAULO)
 
-    ps = PrestacaoServico(321, "Átila", "4002 - 8922", "atila123@gamil.com", endereco_ps, "12.123.123/000", "SEFAZ", "25/03/2007", "Pendente...")
+    ps = PrestacaoServico(321, "Diego", "4002 - 8922", "Diego123@gamil.com", endereco_ps, "12.123.123/000", "SEFAZ", "25/03/2007", "Pendente...")
 
     print(ps)
 
